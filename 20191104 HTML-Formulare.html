@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Formulare</title>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Vorname:</td>
+                <td>
+                    <input type="text" maxlength="10" id="vn" placeholder="Hier Ihr Vorname" required>
+                </td>
+            </tr>
+            <!--tr>td{Nachname:}+td>input-->
+            <tr>
+                <td>Nachname:</td>
+                <td>
+                    <input type="text" id="nn">
+                </td>
+            </tr>
+            <tr>
+                <td>Geschlecht:</td>
+                <td>
+                    <!--
+                    Radio = Radiobutton
+                    
+                    Name-Attribut: zum Gruppieren der Radiobutton, damit immer nur ein Radiobutton ausgewählt werden kann
+                    
+                    ID: dient zur Eindeutigen Identifizierung des Radiobuttons welcher ausgewählt wurde  
+                  -->
+                    <input type="radio" name="gesch" id="Mann">
+                    <label for="Mann">Mann</label>
+
+                    <input type="radio" name="gesch" id="Frau">
+                    <label for="Frau">Frau</label>
+
+                    <input type="radio" name="gesch" id="Divers">
+                    <label for="Divers">Divers</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Kontakt:</td>
+                <td>
+                    <input type="checkbox" id="Mail">
+                    <label for="Mail">Mail</label>
+
+                    <input type="checkbox" id="Post">
+                    <label for="Post">Post</label>
+
+                    <input type="checkbox" id="Fax">
+                    <label for="Fax">Fax</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Bundesland</td>
+                <td>
+                    <!--
+                     EINFACHE AUSWAHLLISTE
+                      size: Wie viele Einträge angezeigt werden sollen
+                      multiple: Damit mehrere Elemente mit STRG+ Klick ausgewählt werden können
+                  -->
+                    <select name="irgendwas" id="irgendwas" size="4" multiple>
+                        <option value="W">Wien</option>
+                        <option value="N">Niederösterreich</option>
+                        <option value="B">Burgenland</option>
+                        <option value="St">Steiermark</option>
+                        <option value="OÖ">Oberösterreich</option>
+                        <option value="S">Salzburg</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Klasse</td>
+                <td>
+                    <select name="" id="">
+                        <!--
+                           Gruppierte AUSWAHLLSITE
+                       -->
+                        <optgroup label="AP-04">
+                            <option value="WM">Wenzl Michael</option>
+                            <option value="BG">Both Georg</option>
+                            <option value="TS">Trölß Stefan</option>
+                            <option value="HB">Hüssen Benjamin</option>
+                            <option value="LR">Loner Raphael</option>
+                            <option value="IN">Illes Nicole</option>
+                        </optgroup>
+                        <optgroup label="ST-04">
+                            <option value="RA">Redl Alexander</option>
+                            <option value="GF">Gimplinger Florian</option>
+                            <option value="KA">Krafuss Alexander</option>
+                            <option value="PM">Pravlovsky Markus</option>
+
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Emailadresse</td>
+                <td>
+                    <input type="email" name="" id="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>Kennwort</td>
+                <td>
+                    <input type="password" name="" id="Kennwort">
+                </td>
+            </tr>
+            <tr>
+                <td>Webseite</td>
+                <td>
+                    <input type="url">
+                </td>
+            </tr>
+            <tr>
+                <td>Datum</td>
+                <td>
+                    <input type="date" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Woche</td>
+                <td>
+                    <!--Wird (noch) nicht von allen Browsern unterstützt-->
+                    <input type="week" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <!--Wird (noch) nicht von allen Browsern unterstützt-->
+                <td>Monat</td>
+                <td><input type="month" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>
+                    <input type="file" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Farbe</td>
+                <td><input type="color" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Kommentar</td>
+                <td>
+                    <textarea cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Absenden">
+    </form>
+
+
+</body></html>
